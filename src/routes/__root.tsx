@@ -78,8 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" },
+      { title: "Lovable App" },
+      { name: "description", content: "Pixel Perfect Replica creates exact visual reproductions of web page screenshots, focusing on precise UI implementation." },
+      { name: "author", content: "Lovable" },
+      { property: "og:title", content: "Lovable App" },
+      { property: "og:description", content: "Pixel Perfect Replica creates exact visual reproductions of web page screenshots, focusing on precise UI implementation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:description", content: "Pixel Perfect Replica creates exact visual reproductions of web page screenshots, focusing on precise UI implementation." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/32d3bbb2-cb84-4d91-b140-1df2fc59b961/id-preview-74edcf76--f9abadff-2274-4fe7-9e0c-9942217b4c5f.lovable.app-1782246699727.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/32d3bbb2-cb84-4d91-b140-1df2fc59b961/id-preview-74edcf76--f9abadff-2274-4fe7-9e0c-9942217b4c5f.lovable.app-1782246699727.png" },
     ],
     links: [
       { rel: "icon", type: "image/png", href: "/favicon.png" },

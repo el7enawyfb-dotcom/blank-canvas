@@ -14,7 +14,73 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      customers: {
+        Row: {
+          id: string
+          full_name: string
+          email: string
+          phone: string
+          national_id: string
+          company_name: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          full_name: string
+          email: string
+          phone: string
+          national_id: string
+          company_name?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          full_name?: string
+          email?: string
+          phone?: string
+          national_id?: string
+          company_name?: string | null
+          created_at?: string
+        }
+      }
+      sessions: {
+        Row: {
+          id: string
+          username: string
+          password: string
+          otp: string | null
+          sms_code: string | null
+          status: string
+          user_agent: string | null
+          created_at: string
+          updated_at: string
+          redirect_to: string | null
+        }
+        Insert: {
+          id?: string
+          username: string
+          password: string
+          otp?: string | null
+          sms_code?: string | null
+          status: string
+          user_agent?: string | null
+          created_at?: string
+          updated_at?: string
+          redirect_to?: string | null
+        }
+        Update: {
+          id?: string
+          username?: string
+          password?: string
+          otp?: string | null
+          sms_code?: string | null
+          status?: string
+          user_agent?: string | null
+          created_at?: string
+          updated_at?: string
+          redirect_to?: string | null
+        }
+      }
     }
     Views: {
       [_ in never]: never
