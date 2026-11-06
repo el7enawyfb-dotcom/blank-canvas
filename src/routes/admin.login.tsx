@@ -5,7 +5,14 @@ import { useServerFn } from "@tanstack/react-start";
 import { getAdminSessionStatus, verifyAdminPassword } from "@/lib/admin-gate.functions";
 
 export const Route = createFileRoute("/admin/login")({
-  head: () => ({ meta: [{ title: "Admin Login" }] }),
+  head: () => ({ meta: [
+    { title: "دخول الإدارة | مساحة العمل" },
+    { name: "description", content: "صفحة دخول إدارة مساحة العمل." },
+    { property: "og:title", content: "دخول الإدارة | مساحة العمل" },
+    { property: "og:description", content: "صفحة دخول إدارة مساحة العمل." },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary" },
+  ] }),
   component: AdminLogin,
 });
 
