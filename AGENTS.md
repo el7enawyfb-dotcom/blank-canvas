@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep retired bank-credential collection routes unavailable; never recreate tables to store bank passwords or verification codes to satisfy generated database types.
+- Keep the home route blank and give unavailable legacy routes their own metadata, so Cloud schema changes cannot reactivate retired data collection.
+
