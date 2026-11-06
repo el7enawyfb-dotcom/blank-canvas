@@ -9,8 +9,6 @@ const customerInsertSchema = z.object({
   companyName: z.string().optional(),
 });
 
-type CustomerInput = z.infer<typeof customerInsertSchema>;
-
 export const submitCustomerRegistration = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => customerInsertSchema.parse(data))
   .handler(async ({ data }) => {
